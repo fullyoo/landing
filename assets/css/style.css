@@ -1,0 +1,1278 @@
+@import url(./reset.css);
+@import url(./font.css);
+
+
+/* 변수영역 */
+:root {
+    --text-color: #191919;
+    --primary-color: #1B46EB;
+    --lightGray-color: #ddd;
+    --gray-color: #555;
+    --gray-color2: #999;
+    --lightblueBg-color: #EEF0FB;
+    --white-color: #fff;
+}
+
+
+/* 공통 영역 */
+.inner-sec {
+    width: 100%;
+    max-width: 1206px;
+    margin: 0 auto;
+}
+
+body {
+    color: #191919;
+}
+
+img {
+    width: auto;
+}
+
+section h3 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section h3 .desc {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 10px;
+    display: block;
+    color: var(--text-color);
+}
+
+section h3 span {
+    color: var(--primary-color);
+}
+
+.btn-area {
+    margin-top: 60px;
+    text-align: center;
+}
+
+section .sec-cta {
+    font-size: 24px;
+    background-image: url(../images/sec-cta-ico.png);
+    padding-top: 18px;
+    background-position: 17% 50%;
+    transition: .3s;
+}
+
+section .sec-cta i {
+    font-size: 22px;
+}
+
+.kv-cta:hover {
+    background-position: 17% 50%;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+section .sec-cta:hover {
+    background-position-x: 19%;
+}
+
+
+
+
+/* kv-sec 영역 */
+.kv-sec {
+    background: #0E0E30 url(../images/kv-img-ico.png) no-repeat 20% top / cover;
+    color: var(--white-color);
+}
+
+.kv-sec a {
+    color: var(--white-color);
+}
+
+.kv-sec .inner-sec {
+    position: relative;
+}
+
+.kv-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 0 0;
+}
+
+.kv-logos {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.kv-left {
+    font-family: 'GMarketSans', sans-serif;
+}
+
+.kv-left h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.kv-left h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0 60px;
+}
+
+.kv-left h2 span {
+    color: var(--primary-color);
+    display: block;
+}
+
+.kv-cta {
+    color: var(--white-color);
+    padding: 20px 60px 15px 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    background: var(--primary-color) url(../images/kv-cta-ico.png) no-repeat 15% 50%;
+    display: inline-block;
+    text-align: center;
+    transition: .3s;
+    border: 1px solid var(--primary-color);
+
+}
+
+.kv-cta i {
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.kv-right {}
+
+.kv-right img {
+    width: 455px;
+}
+
+.control-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-num {
+    border: 1px solid rgba(255 255 255 / 50%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color: rgba(0 0 0 / 80%);
+}
+
+.control-num .first {
+    font-weight: 700;
+}
+
+.control-num .last {
+    opacity: 0.6;
+}
+
+.control-btn {
+    display: flex;
+    gap: 3px;
+}
+
+.control-btn a {
+    border: 1px solid rgba(255 255 255 / 50%);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0 0 0 / 80%);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    display: block;
+    transition: .2s;
+}
+
+.control-btn a:hover {
+    background-color: var(--primary-color);
+}
+
+.control-btn .play {
+    background-image: url(../images/control-play.svg);
+}
+
+.control-btn .pause {
+    background-image: url(../images/control-pause.svg);
+}
+
+.control-btn .prev {
+    background-image: url(../images/control-prev.svg);
+}
+
+.control-btn .next {
+    background-image: url(../images/control-next.svg);
+}
+
+
+/* 서비스 영역 */
+.service-sec {
+    background-color: var(--lightblueBg-color);
+    padding: 70px 0;
+}
+
+.service-sec h3 {
+    display: none;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-list a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    padding: 30px 20px;
+}
+
+.service-list li {
+    width: calc((100% - 60px) / 3);
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.service-list li i {
+    position: absolute;
+    right: 20px;
+    color: var(--primary-color);
+}
+
+.service-list li:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-10px);
+    transition: .3s;
+}
+
+.service-list .service-link:hover li {}
+
+.service-list .service-link:hover img {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.service-list .service-link:hover p,
+.service-list .service-link:hover span,
+.service-list .service-link:hover i {
+    color: var(--white-color);
+}
+
+.service-text {}
+
+.service-text p {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.service-text span {
+    color: var(--gray-color);
+}
+
+
+
+
+/* 리뷰 영역 */
+.review-sec {
+    padding: 100px 0;
+}
+
+.review-list {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.review-list li {
+    background-color: var(--lightblueBg-color);
+    padding: 30px;
+    border-radius: 20px;
+    width: calc((100% - 60px) / 3);
+}
+
+.review-text {
+    position: relative;
+}
+
+.review-text .mark {
+    text-align: right;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 66px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+
+}
+
+.review-text p {
+    padding: 60px 0 30px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    /* 줄바꿈하지 않고 말줄임을 표시하는 
+       방법에 필요한 CSS 속성들 */
+
+    /* 텍스트가 줄바꿈하지 않고 텍스트 영역을 벗어나도록(오버플로되도록) white-space: nowrap을 설정 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-box {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.review-txt {
+    font-size: 18px;
+    color: var(--gray-color);
+    /* 줄바꿈하지 않고 말줄임을 표시하는 
+       방법에 필요한 CSS 속성들 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* 제한할 텍스트의 줄 수 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    height: 4.5em;
+}
+
+.review-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    padding-top: 20px;
+}
+
+.review-info .star {}
+
+.review-info .star span {
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 0 -1px;
+}
+
+.review-info .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.review-info .name img {
+    height: 16px;
+}
+
+
+
+
+/* choice-sec 영역 */
+.choice-sec {
+    padding: 100px 0;
+    background-color: #F6F6F6;
+}
+
+.choice-list {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+}
+
+.choice-list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+    width: calc((100% - 60px) / 2);
+}
+
+.choice-list li img {
+    width: 180px;
+    animation: choice 1s ease-in infinite alternate;
+    animation-direction: alternate-reverse;
+    /* animation-direction CSS 속성은 
+    애니메이션의 재생 방향을 지정하며, 
+    normal (순방향), 
+    reverse (역방향), 
+    alternate (순방향 후 역방향), 
+    alternate-reverse (역방향 후 순방향) 등의 값을 사용합니다. */
+}
+
+.choice-list li:nth-child(2) img,
+.choice-list li:nth-child(3) img {
+    animation: choice 1s ease-in infinite alternate;
+}
+
+@keyframes choice {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        /* margin-top: 5px; */
+        transform: rotate(10deg);
+    }
+
+}
+
+.choice-text {}
+
+.choice-text p {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.choice-text span {
+    font-size: 18px;
+    color: var(--gray-color);
+}
+
+
+
+
+/* 고객문의 영역 */
+.customer-sec {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #1B46EB 60%, #0F2885);
+    background-color: var(--primary-color);
+}
+
+.customer-sec h3 {
+    color: var(--white-color);
+}
+
+.customer-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-right {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 35%;
+}
+
+.customer-right a {
+    color: var(--white-color);
+    display: block;
+}
+
+.cusomer-title {}
+
+.cusomer-title .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cusomer-title .title p {
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: -5px;
+}
+
+.cusomer-title span {
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.customer-touch {}
+
+.customer-touch a {
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.customer-touch .tel {
+    background: url(../images/tel-ico.svg) no-repeat 0 50%;
+}
+
+.customer-touch .email {
+    background: url(../images/email-ico.svg) no-repeat 0 50%;
+}
+
+.customer-time {}
+
+.customer-time p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.customer-time p b {
+    font-weight: 700;
+}
+
+.customer-time .tit {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.customer-time span {
+    font-weight: 500;
+}
+
+.customer-left {
+    background-color: var(--white-color);
+    width: calc(65% - 65px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-data>div {
+    display: flex;
+    align-items: center;
+}
+
+.form-data label {
+    position: relative;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100px;
+}
+
+.form-data label::before {
+    content: '*';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: #fb001e;
+}
+
+.form-data input {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: var(--lightblueBg-color);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: 'pretendard', sans-serif;
+}
+
+.form-data textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: var(--lightblueBg-color);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: 'pretendard', sans-serif;
+    resize: none;
+    overflow-y: auto;
+}
+
+.form-data input::placeholder {}
+
+.form-data textarea::placeholder {}
+
+.form-data .sec-cta {
+    font-size: 18px;
+    background-position-x: 37%;
+    background-image: url(../images/customer-ico.svg);
+    padding-top: 15px;
+    width: 100%;
+}
+
+.form-data .sec-cta:hover {
+    background-position-x: 39%;
+}
+
+.form-data .sec-cta i {
+    vertical-align: bottom;
+}
+
+.form-data .check-box {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+}
+
+.check-box input[type='checkbox'] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.check-box input[type='checkbox']:checked+label:before {
+    background-image: url(../images/customer-check-on.svg);
+    border: 1px solid var(--primary-color);
+}
+
+.form-data .check-box input {
+    width: auto;
+}
+
+.form-data .check-box label {
+    width: auto;
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 33px;
+}
+
+.form-data .check-box label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--white-color) url(../images/customer-check-off.svg) no-repeat 0 0;
+    border: 1px solid var(--gray-color2);
+    border-radius: 5px;
+    transform: translateY(-50%);
+    transition: .3s;
+    background-size: 24px;
+}
+
+.form-data .check-box label a {
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.form-data .check-box label a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form-data .check-link {}
+
+
+/* 레이어팝업 영역 */
+.pop-layer .pop-container {
+    padding: 20px 25px;
+}
+
+.pop-layer h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.pop-layer .ctxt {
+    color: var(--gray-color);
+    border-top: 1px solid var(--lightGray-color);
+    border-bottom: 1px solid var(--lightGray-color);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.pop-layer .ctxt p {
+    margin: 15px 0;
+}
+
+.pop-layer .ctxt p strong {
+    color: var(--primary-color);
+    display: block;
+    font-weight: 600;
+}
+
+.pop-layer .btn-r {
+    width: 100%;
+    text-align: right;
+}
+
+.pop-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    width: 50%;
+    height: auto;
+    background-color: var(--white-color);
+    border: 5px solid var(--primary-color);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.dim-layer {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.dim-layer .dimBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--text-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.dim-layer .pop-layer {
+    display: block;
+}
+
+a.btn-layerClose {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    color: var(--white-color);
+    transition: .3s;
+    border-radius: 20px;
+}
+
+a.btn-layerClose:hover {
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+
+
+
+/* 풋터영역 */
+.footer {
+    padding: 50px 0;
+}
+
+.footer-menu {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--lightGray-color);
+    margin-bottom: 50px;
+}
+
+.footer-menu-group {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-menu-group li {}
+
+.footer-menu-group li a {
+    color: var(--text-color);
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+.footer-menu-group li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-menu-group li a strong {
+    font-weight: 700;
+}
+
+.footer-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {}
+
+.footer-logo {}
+
+.footer-logo img {}
+
+.footer-logo .desc {
+    color: var(--gray-color2);
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-logo .desc strong {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.footer-info-group {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.footer-info-list {
+    display: flex;
+    gap: 22px;
+}
+
+.footer-info-list dl {
+    display: flex;
+    gap: 8px;
+    margin: 2px 0;
+}
+
+.footer-info-list dl dt {
+    font-weight: 600;
+}
+
+.footer-info-list dl dd {}
+
+.footer-customer {}
+
+.footer-customer-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-customer-touch {
+    margin: 10px 0;
+}
+
+.footer-customer-touch a {
+    display: block;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 24px;
+}
+
+.footer-customer-touch .tel {
+    background: url(../images/footer-tel-ico.svg) no-repeat 0 50%;
+}
+
+.footer-customer-touch .email {
+    background: url(../images/footer-email-ico.svg) no-repeat 0 80%;
+}
+
+.footer-customer-time {
+    font-size: 15px;
+}
+
+.footer-company {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    color: var(--text-color);
+    border: 1px solid var(--gray-color2);
+    padding: 12px 20px;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+}
+
+.footer-company:hover {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.footer-company:hover span {
+    transform: translateX(10px);
+    transition: .3s;
+}
+
+.footer-company:hover i {
+    transform: translateX(-10px);
+    transition: .3s;
+}
+
+
+
+
+
+
+.footer-copy {
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+
+
+/* 브레이크 포인트 영역 */
+@media(max-width: 1280px) {
+    .inner-sec {
+        max-width: 100%;
+        width: calc(100% - 60px);
+    }
+}
+
+@media(max-width: 1024px) {
+    section .sec-cta {
+        transition: 0s;
+    }
+
+    .kv-cta {
+        transition: 0s;
+    }
+
+    .control-btn a {
+        transition: 0s;
+    }
+
+    .kv-sec {
+        background-position: left top;
+        background-size: 100%;
+    }
+
+    .kv-cont {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0 0;
+        align-items: center;
+    }
+
+    .kv-left h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .kv-left h4 {
+        font-size: 20px;
+    }
+
+    .kv-logos {}
+
+    .kv-logos img {
+        height: 20px;
+    }
+
+    .kv-right {
+        padding-top: 60px;
+    }
+
+    .kv-right img {
+        width: 350px;
+    }
+
+    .kv-cta {
+        font-size: 24px;
+    }
+
+    .service-sec {}
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-list a {}
+
+    .service-list li {
+        width: 100%;
+    }
+
+    .service-list .service-link:hover {
+        transition: 0s;
+    }
+
+    .choice-sec {}
+
+    .choice-list {
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+    }
+
+    .choice-list li {
+        width: 100%;
+    }
+
+    .review-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .review-list li {
+        width: calc((100% - 30px) / 2);
+    }
+
+    .customer-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .customer-right {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .customer-left {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .cusomer-title .title {
+        font-size: 18px;
+    }
+
+    .form-data {
+        gap: 30px;
+    }
+
+    .form-data>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .form-data .check-box label::before {
+        transition: 0s;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-menu-group li a {
+        font-size: 14px;
+    }
+
+    .footer-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo img {
+        width: 130px;
+    }
+
+    .footer-logo .desc strong {
+        display: block;
+    }
+
+    .footer-info-list {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .footer-info-group {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .footer-info-list dl {
+        margin-right: 10px;
+    }
+
+    .footer-customer {
+        margin-top: 30px;
+    }
+
+    .footer-copy {
+        font-size: 13px;
+    }
+
+    .footer-company {
+        width: 300px;
+        /* transition: 0s; */
+    }
+
+    .footer-company:hover span {
+        /* transition: 0s; */
+    }
+
+    .footer-company:hover i {
+        /* transition: 0s; */
+    }
+
+}
+
+
+
+@media(max-width: 767px) {
+    .inner-sec {
+        max-width: 100%;
+        width: calc(100% - 40px);
+    }
+
+    .kv-left h2 {
+        font-size: 40px;
+    }
+
+    .kv-cta {
+        padding: 15px 0 10px;
+        width: 100%;
+        font-size: 20px;
+        background-size: 30px;
+        background-image: none;
+    }
+
+    .kv-cta i {
+        font-size: 20px;
+    }
+
+    .service-list a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .service-list li {}
+
+    .service-list li i {
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .choice-sec {
+        padding: 70px 0;
+    }
+
+    .choice-list li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    section h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    section h3 .desc {
+        font-size: 20px;
+    }
+
+    .review-sec {
+        padding: 70px 0;
+    }
+
+    .review-list li {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .review-text p {
+        font-size: 24px;
+        padding: 50px 0 20px;
+    }
+
+    .review-text .mark {
+        font-size: 14px;
+        width: 60px;
+    }
+
+    section .sec-cta {
+        background-image: none;
+        padding: 20px 0;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .btn-area {
+        margin-top: 30px;
+    }
+
+    .customer-sec {
+        padding: 70px 0;
+    }
+
+    .cusomer-title .title p {
+        font-size: 30px;
+    }
+
+    .customer-touch a {
+        font-size: 24px;
+        background-size: 25px !important;
+        padding-left: 30px;
+    }
+
+    .customer-time span br {
+        display: none;
+    }
+
+    .cusomer-title span {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .customer-time .tit {
+        font-size: 16px;
+    }
+
+    .customer-time p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .customer-time span {
+        font-size: 13px;
+    }
+
+    .form-data .sec-cta {
+        background-image: none;
+    }
+
+    .form-data .check-box {
+        margin: 0;
+    }
+
+    .pop-layer {
+        width: 90%;
+    }
+
+    .footer-menu-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer-menu-group li {
+        /* width: calc(50% - 10px); */
+    }
+
+}
