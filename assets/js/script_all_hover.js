@@ -602,11 +602,8 @@ $(function () {
 // 8. 좌우 스와이퍼 네이게이션(폰리스트)
 // swiper-slide
 
-// Swiper 인스턴스들을 저장할 배열
-var swiperInstances = [];
-
 // 모든 슬라이더에 대해 개별적으로 Swiper 인스턴스 생성
-document.querySelectorAll('.latest_slide').forEach(function (slideEl, index) {
+document.querySelectorAll('.latest_slide').forEach(function (slideEl) {
     var swiperInstance = new Swiper(slideEl, {
         loop: true,
         speed: 1000,
@@ -649,66 +646,17 @@ document.querySelectorAll('.latest_slide').forEach(function (slideEl, index) {
         },
     });
 
-    // 인스턴스 저장
-    swiperInstances.push({
-        element: slideEl,
-        swiper: swiperInstance
-    });
-
-    // 초기 active 상태가 아니면 autoplay 중지
-    if (!slideEl.classList.contains('active')) {
-        swiperInstance.autoplay.stop();
-    }
-
     // 마우스 오버 시 자동 롤링 멈춤
     slideEl.addEventListener('mouseenter', function () {
         swiperInstance.autoplay.stop();
     });
 
     slideEl.addEventListener('mouseleave', function () {
-        // 현재 활성화된 탭인지 확인
-        if (slideEl.classList.contains('active')) {
-            swiperInstance.autoplay.start();
-        }
+        swiperInstance.autoplay.start();
     });
 });
 
-// 탭 클릭 이벤트
-document.querySelectorAll('.tab-link').forEach(function (tabLink) {
-    tabLink.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        var targetTab = this.getAttribute('data-tab');
-
-        // 모든 탭 비활성화
-        document.querySelectorAll('.tab-link').forEach(function (link) {
-            link.classList.remove('active');
-        });
-        document.querySelectorAll('.tab-content').forEach(function (content) {
-            content.classList.remove('active');
-        });
-
-        // 선택한 탭 활성화
-        this.classList.add('active');
-        document.getElementById(targetTab).classList.add('active');
-
-        // 모든 슬라이더의 autoplay 중지
-        swiperInstances.forEach(function (item) {
-            item.swiper.autoplay.stop();
-        });
-
-        // 활성화된 탭의 슬라이더만 autoplay 시작
-        swiperInstances.forEach(function (item) {
-            if (item.element.id === targetTab) {
-                item.swiper.params.autoplay = {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                };
-                item.swiper.autoplay.start();
-            }
-        });
-    });
-});
 
 // ============================================
 // 9. 키비주얼 롤링

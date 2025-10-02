@@ -618,10 +618,10 @@ document.querySelectorAll('.latest_slide').forEach(function (slideEl, index) {
             prevEl: '.slide_arrow .prev',
             nextEl: '.slide_arrow .next',
         },
-        autoplay: {
+        autoplay: index === 0 ? {
             delay: 2000,
             disableOnInteraction: false,
-        },
+        } : false,
         pagination: {
             el: slideEl.querySelector(".swiper-pagination"),
             type: 'bullets',
@@ -655,14 +655,11 @@ document.querySelectorAll('.latest_slide').forEach(function (slideEl, index) {
         swiper: swiperInstance
     });
 
-    // 초기 active 상태가 아니면 autoplay 중지
-    if (!slideEl.classList.contains('active')) {
-        swiperInstance.autoplay.stop();
-    }
-
     // 마우스 오버 시 자동 롤링 멈춤
     slideEl.addEventListener('mouseenter', function () {
-        swiperInstance.autoplay.stop();
+        if (swiperInstance.autoplay.running) {
+            swiperInstance.autoplay.stop();
+        }
     });
 
     slideEl.addEventListener('mouseleave', function () {
@@ -709,6 +706,7 @@ document.querySelectorAll('.tab-link').forEach(function (tabLink) {
         });
     });
 });
+
 
 // ============================================
 // 9. 키비주얼 롤링
