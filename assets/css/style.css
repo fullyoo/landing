@@ -321,7 +321,7 @@ a {
 
 .links:hover {
     color: var(--primary-color);
-    /* font-weight: 800; */
+    font-weight: 800;
     /* text-decoration: underline; */
 }
 
@@ -359,6 +359,7 @@ a {
     bottom: -28px;
     bottom: 0px;
     background-color: var(--primary-color);
+    background-color: var(--text-color);
     opacity: 0;
     transition: transform ease .3s;
     transform: scaleX(0);
