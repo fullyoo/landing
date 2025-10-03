@@ -2942,6 +2942,8 @@ a.btn-layerClose:hover {
 
     .event-sec .arrow-box {
         width: calc(100% - 80px);
+        bottom: 20px;
+        top: auto;
     }
 
     .kv-right img {
