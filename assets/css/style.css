@@ -437,8 +437,8 @@ a {
 .kv-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0 0;
-
+    align-items: center;
+    /* padding: 100px 0 0; */
 }
 
 .kv-cont1 {}
@@ -495,7 +495,9 @@ a {
     padding-left: 10px;
 }
 
-.kv-right {}
+.kv-right {
+    padding-top: 90px;
+}
 
 .kv-right img {
     height: 550px;
