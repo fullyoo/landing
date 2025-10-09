@@ -149,6 +149,9 @@ a {
 /* 우측 탑버튼 */
 #btnTop {
     opacity: 0;
+    /* 기본 숨김 */
+    pointer-events: none;
+    /* 안 보일 때 클릭 방지 */
     position: fixed;
     bottom: 70px;
     right: 35px;
@@ -171,6 +174,9 @@ a {
 
 #btnTop.show {
     opacity: 1;
+    /* show 클래스가 붙으면 보임 */
+    pointer-events: auto;
+    /* 보일 때 클릭 */
 }
 
 #btnTop:before {
@@ -1625,6 +1631,12 @@ a {
     padding: 0;
     border: 0;
     overflow: hidden;
+}
+
+.form-data .check-box label:hover::before {
+    border: 2px solid var(--primary-color);
+    box-sizing: border-box;
+    background-position: -1px -1px;
 }
 
 .check-box input[type='checkbox']:checked+label:before {
