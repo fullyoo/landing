@@ -978,7 +978,8 @@
                 <h3>궁금하신 점을 문의주시면 신속하게 답변해 드려요!</h3>
                 <div class="customer-cont" data-aos="fade-up" data-aos-duration="600">
                     <div class="customer-left">
-                        <form action="#" method="post" class="form-data">
+                        <!-- novalidate:  required 속성이 남아 있어도 브라우저 기본 알림은 비활성화되고, 대신 jQuery의 alert 메시지만 표시-->
+                        <form action="#" method="post" class="form-data" novalidate>
                             <div>
                                 <label for="name">이름</label>
                                 <input type="text" id="name" placeholder="이름을 입력해 주세요." required>
@@ -1158,7 +1159,7 @@
     <!-- //개인정보 동의 레이어팝업 -->
 
 
-    <button type="button" id="btnTop" class="">TOP</button>
+    <button type="button" id="btnTop" class="show">TOP</button>
 
 
     <!-- 제이쿼리 cdn -->

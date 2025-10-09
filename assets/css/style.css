@@ -338,7 +338,7 @@ a {
     color: var(--white-color);
     width: 100%;
     padding: 0 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     border-radius: 10px 10px 0 0;
 }
 
@@ -1643,6 +1643,7 @@ a {
     background-image: url(../images/customer-check-on-w.svg);
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
+    background-position: -1px -1px;
 }
 
 .form-data .check-box input {

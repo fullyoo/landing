@@ -3,6 +3,7 @@
 // ================================
 // 1. 고객문의 개인정보 체크 레이어 팝업
 
+// ✅ 개인정보 보기 팝업
 $('.btn-example').click(function () {
     var $href = $(this).attr('href');
     layer_popup($href);
@@ -46,7 +47,6 @@ function layer_popup(el) {
     });
 
 
-
     //스크롤 막기
 
     $('.dim-layer').on('scroll touchmove mousewheel', function (event) {
@@ -54,10 +54,74 @@ function layer_popup(el) {
         event.stopPropagation();
         return false;
     });
+};
 
 
-}
+// ✅ 폼 유효성 검사
+$('.form-data').on('submit', function (e) {
+    e.preventDefault(); // 기본 전송 막기
 
+    var name = $('#name').val().trim();
+    var phone = $('#phone-num').val().trim();
+    var phoneKind = $('#phone-kind').val().trim();
+    var content = $('#content').val().trim();
+    var isChecked = $('#checkTerms').is(':checked');
+
+
+    // 01.
+
+    // if (!name || !phone || !phoneKind || !content) {
+    //     alert('모든 입력란을 채워주세요.');
+    //     return false;
+    // }
+
+    // if (!isChecked) {
+    //     alert('개인정보 수집/이용 동의가 필요합니다.');
+    //     return false;
+    // }
+
+    // 02.
+
+    if (!name) {
+        alert('이름을 입력해 주세요.');
+        $('#name').focus();
+        return false;
+    }
+
+    if (!phone) {
+        alert('연락처를 입력해 주세요.');
+        $('#phone-num').focus();
+        return false;
+    }
+
+    if (!phoneKind) {
+        alert('폰기종을 입력해 주세요.');
+        $('#phone-kind').focus();
+        return false;
+    }
+
+    if (!content) {
+        alert('문의 내용을 입력해 주세요.');
+        $('#content').focus();
+        return false;
+    }
+
+    if (!isChecked) {
+        alert('개인정보 수집/이용 동의가 필요합니다.');
+        $('#checkTerms').focus();
+        return false;
+    }
+
+    // ✅ 모든 조건이 충족된 경우 전송
+    alert('문의가 정상적으로 접수되었습니다!-테스트 버전입니다');
+    // 실제 전송하려면 아래 주석을 해제
+    // this.submit();
+
+
+    // 🔹 입력값 초기화 (폼 리셋)
+    $(this).trigger("reset");
+
+});
 
 
 
