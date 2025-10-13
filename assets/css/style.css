@@ -509,17 +509,16 @@ a {
 
 .kv-right img {
     height: 550px;
-    animation: kv .6s ease-in infinite alternate;
+    animation: kv .8s ease-in infinite alternate;
 }
 
 /* 페이드인 및 위로 이동 애니메이션 */
 @keyframes kv {
     0% {
-        margin-top: 0px;
+        transform: translateY(0px);
     }
 
     100% {
-        /* margin-top: 5px; */
         transform: translateY(10px);
     }
 }
@@ -2180,6 +2179,10 @@ a.btn-layerClose:hover {
         width: calc(100% - 60px);
     }
 
+    .kv-right img {
+        height: 400px;
+    }
+
     .review-wrap .inner-sec {
         max-width: unset;
         max-width: 100%;
@@ -3067,7 +3070,7 @@ a.btn-layerClose:hover {
 
 @media(max-width: 480px) {
     .kv-wrap {
-        padding: 60px 0 20px;
+        /* padding: 60px 0 20px; */
         height: 600px;
     }
 }
