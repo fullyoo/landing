@@ -16,6 +16,7 @@ html {
     --white-color: #fff;
     --bg-color: #f6f6f6;
     --red-color: #F9001C;
+    --point-color: #00d7ff;
 }
 
 
@@ -366,6 +367,7 @@ a {
     bottom: 0px;
     background-color: var(--primary-color);
     background-color: var(--text-color);
+    background-color: var(--point-color);
     opacity: 0;
     transition: transform ease .3s;
     transform: scaleX(0);
@@ -507,6 +509,19 @@ a {
 
 .kv-right img {
     height: 550px;
+    animation: kv .6s ease-in infinite alternate;
+}
+
+/* 페이드인 및 위로 이동 애니메이션 */
+@keyframes kv {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        /* margin-top: 5px; */
+        transform: translateY(10px);
+    }
 }
 
 .kv-right-img1 {}
@@ -698,14 +713,15 @@ a {
 }
 
 .tab-menu:hover {
-    background-color: var(--lightblueBg-color);
+    /* background-color: var(--lightblueBg-color); */
+    border-color: var(--primary-color);
 
 }
 
 .tab-menu.active {
-    background-color: var(--lightblueBg-color);
+    /* background-color: var(--lightblueBg-color); */
     color: var(--primary-color);
-    border-color: var(--primary-color);
+    border-color: var(--point-color);
 }
 
 .tab-contents {
@@ -961,6 +977,11 @@ a {
 
 .nav-link:hover {
     background-color: var(--white-color);
+    border-color: var(--primary-color);
+}
+
+.nav-link.active {
+    border-color: var(--point-color);
 }
 
 .price-box {
@@ -1974,7 +1995,7 @@ a.btn-layerClose:hover {
 
 /* 풋터영역 */
 #footer {
-    padding: 50px 0;
+    padding: 35px 0 50px;
 }
 
 .footer-top {
@@ -2212,9 +2233,13 @@ a.btn-layerClose:hover {
         align-items: center;
     }
 
+    .kv-cont1 {}
+
     .kv-cont2 {
         /* padding-bottom: 60px; */
     }
+
+    .kv-cont3 {}
 
     .kv-right-img2 {
         padding-left: 50px;
@@ -2353,7 +2378,7 @@ a.btn-layerClose:hover {
     }
 
     #footer {
-        padding: 30px 0;
+        padding: 20px 0 50px;
     }
 
     .footer-top {
@@ -3040,6 +3065,12 @@ a.btn-layerClose:hover {
     }
 }
 
+@media(max-width: 480px) {
+    .kv-wrap {
+        padding: 60px 0 20px;
+        height: 600px;
+    }
+}
 
 
 @media(max-width: 320px) {
