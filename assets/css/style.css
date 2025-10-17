@@ -1654,16 +1654,16 @@ a {
 }
 
 .form-data .check-box label:hover::before {
-    border: 2px solid var(--primary-color);
-    box-sizing: border-box;
-    background-position: -1px -1px;
+    /* border: 2px solid var(--primary-color); */
+    /* box-sizing: border-box; */
+    /* background-position: -1px -1px; */
 }
 
 .check-box input[type='checkbox']:checked+label:before {
     background-image: url(../images/customer-check-on-w.svg);
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
-    background-position: -1px -1px;
+    /* background-position: -1px -1px; */
 }
 
 .form-data .check-box input {
