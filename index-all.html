@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- iOS 전화번호 자동링크 방지 -->
+    <!-- ios 아이폰 전화번호 컬러 변경방지 -->
     <meta name="format-detection" content="telephone=no">
 
-    <!-- ✅ 기본 메타 정보 -->
+    <!-- <title>세티즌_랜딩페이지</title> -->
+    <!-- 기본 메타 -->
     <title>세티즌: 통신비 아끼는 갓성비 가입혜택 – 유심/번호이동/신규개통 빠르게!</title>
     <meta name="description"
-        content="매달 통신비를 획기적으로 줄이고 싶다면? 유심 구매, 번호이동, 신규개통까지 5분 내 가능! 갓성비 요금제, 최신 스마트폰 반값 혜택, 데이터 추가 제공까지 – 지금 신청하세요.">
-    <meta name="keywords" content="통신비 절감, 유심, 번호이동, 신규개통, 갓성비 요금제, 스마트폰 할인, 데이터 혜택, 알뜰폰, 개통 이벤트">
+        content="매달 통신비를 획기적으로 줄이고 싶다면? 유심 구매, 번호이동, 신규개통까지 5 분 내 가능! 갓성비 요금제, 최신 스마트폰 반값 혜택, 데이터 추가 제공까지 – 지금 신청하세요.">
+    <meta name="keywords" content="통신비 절감, 유심 구매, 번호이동, 신규개통, 갓성비 요금제, 스마트폰 할인, 데이터 추가 혜택">
 
-    <!-- ✅ 검색엔진 크롤링 설정 -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <!-- 기타 SEO 보완 메타태그 -->
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://landing-re.netlify.app/">
 
-    <!-- ✅ Open Graph (Facebook, Kakao, Instagram 등) -->
+    <!-- Open Graph (Facebook, Kakao, Instagram 등) -->
     <meta property="og:url" content="https://landing-re.netlify.app/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="세티즌 – 통신비 절감 랜딩페이지">
+    <meta property="og:site_name" content="랜딩 – 통신비 절감 가입혜택">
     <meta property="og:title" content="통신비 아끼는 갓성비 가입혜택 – 지금 신청하기">
     <meta property="og:description" content="유심/번호이동/신규개통 5분 완성! 반값 스마트폰, 데이터 추가 혜택까지 한눈에.">
     <meta property="og:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
@@ -30,67 +31,75 @@
     <meta property="og:image:alt" content="통신비 절감 및 유심 빠른 개통 혜택 안내 이미지">
     <meta property="og:locale" content="ko_KR">
 
-    <!-- ✅ Twitter Card -->
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
     <meta name="twitter:title" content="통신비 아끼는 갓성비 가입혜택">
-    <meta name="twitter:description" content="유심, 번호이동, 신규개통 – 반값 스마트폰과 데이터 추가 혜택까지 한 번에.">
+    <meta name="twitter:description" content="유심, 번호이동, 신규개통 – 통신비 걱정 끝! 반값 스마트폰, 데이터 추가까지 한 번에.">
     <meta name="twitter:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
 
-    <!-- ✅ 파비콘 (브라우저 / iOS) -->
+
+    <!-- 🌐 소셜미디어 프로필 연결 -->
+    <!-- <link rel="me" href="https://www.facebook.com/yourpage" /> -->
+    <link rel="me" href="https://www.instagram.com/fully.yoo" />
+    <!-- <link rel="me" href="https://twitter.com/youraccount" /> -->
+    <!-- <link rel="me" href="https://www.youtube.com/@yourchannel" />
+    <link rel="me" href="https://pf.kakao.com/_yourkakaolink" /> -->
+
+    <!-- 구조화 데이터 (Google SEO용) -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://landing-re.netlify.app",
+    "@type": "Organization",
+    "name": "랜딩 – 통신비 절감 가입혜택",
+    "url": "https://landing-re.netlify.app/",
+    "logo": "https://landing-re.netlify.app/assets/images/logo.svg",
+    "sameAs": [
+        "https://www.instagram.com/fully.yoo"
+    ]
+    }
+    </script>
+
+
+    <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon"> -->
+
+    <!-- 파비콘 (브라우저 아이콘) -->
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/images/favicon.ico">
 
-    <!-- ✅ 소셜미디어 프로필 연결 -->
-    <link rel="me" href="https://www.instagram.com/fully.yoo" />
+    <!-- aos css -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
 
-    <!-- ✅ 구조화 데이터 (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://landing-re.netlify.app",
-      "@type": "Organization",
-      "name": "세티즌 – 통신비 절감 랜딩페이지",
-      "url": "https://landing-re.netlify.app/",
-      "logo": "https://landing-re.netlify.app/assets/images/logo.svg",
-      "sameAs": [
-        "https://www.instagram.com/fully.yoo"
-      ],
-      "description": "유심, 번호이동, 신규개통을 빠르게! 통신비 절감, 반값 스마트폰, 데이터 추가 혜택까지 한 번에."
-    }
-    </script>
+    <!-- Swiper  css-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- ✅ Google Search Console 인증 -->
     <meta name="google-site-verification" content="vnqBy3aQtFRNgqglh3m3ATc2MnZ5PjiFwBi-0th2VOs" />
 
-
-    <!-- ✅ Google Analytics 4 최신 코드 (기존 UA보다 권장됨) -->
-    <!-- window.GA_ID 값이 있을 경우 자동으로 삽입,없을 경우 기본 ID(G-7ABCD1234E) 사용 -->
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ABCD1234E"></script>
+    <!-- 구글 애널리틱스 연동 여부 -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-168536837-1'></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-7ABCD1234E'); // 🔹 UA → GA4 ID로 변경 권장
+        gtag('config', 'UA-168536837-1');
     </script>
 
-
-    <!-- ✅ Naver Analytics -->
+    <!-- 네이버 애널리틱스 연동 여부 -->
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
     <script type="text/javascript">
         if (!wcs_add) var wcs_add = {};
-        wcs_add["wa"] = "671e216cccdff8"; // 네이버 애널리틱스 ID
+        wcs_add["wa"] = "671e216cccdff8";
         if (window.wcs) {
             wcs_do();
         }
     </script>
 
-    <!-- ✅ AOS / Swiper / CSS -->
-    <link rel="stylesheet" href="./assets/css/aos.css">
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-
 
 <body id="main">
     <!-- 상단 메인 띠배너 -->
