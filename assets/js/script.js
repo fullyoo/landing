@@ -960,14 +960,24 @@ $('.review-slide .swiper-slide').on('mouseleave', function () {
 
 
 // ============================================
-// 12. 팝업 코드 작성
+// 12. 포트폴리오 용도 팝업 코드 작성
 
+//12-1. 얼럿창
 //제이쿼리 방식
 // $(window).on('load', function () {
 //     alert('본 페이지는 포트폴리오 용도로 제작된 사이트입니다.');
 // });
 
-//자바스크립트 방식
-// window.addEventListener('load', function () {
-//     alert('이 페이지는 포트폴리오용 홈페이지입니다.');
-// });    
+
+
+//12-2. 레이어팝업 띄우기
+$(window).on('load', function () {
+    const $popup = $('#portfolio-popup');
+    const $closeBtn = $('#popup-close');
+
+    $popup.css('display', 'flex');
+
+    $closeBtn.on('click', function () {
+        $popup.hide();
+    });
+});
