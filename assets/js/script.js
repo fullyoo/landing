@@ -957,3 +957,17 @@ $('.review-slide .swiper-slide').on('mouseenter', function () {
 $('.review-slide .swiper-slide').on('mouseleave', function () {
     reviewSwiper.autoplay.start();
 });
+
+
+// ============================================
+// 12. 팝업 코드 작성
+
+//제이쿼리 방식
+$(window).on('load', function () {
+    alert('본 페이지는 포트폴리오 용도로 제작된 사이트입니다.');
+});
+
+//자바스크립트 방식
+// window.addEventListener('load', function () {
+//     alert('이 페이지는 포트폴리오용 홈페이지입니다.');
+// });    
