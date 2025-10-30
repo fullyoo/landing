@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // ================================
-// 3. 우측 TOP 탑 버튼
+// 3. 우측 탑버튼
 
 let btnTop = document.querySelector("#btnTop"),
     headerH = 70;
@@ -461,16 +461,27 @@ $(function () {
 // ============================================
 // 5-2. 모바일-메뉴버튼-클릭-시-x버튼-닫기버튼으로-변경
 
-let menu = document.querySelector('.menu-wrap');
+// let menu = document.querySelector('.menu-wrap');
 
-menu.addEventListener('click', function () {
-    // contains: 클래스 유지하고 있으면,
-    if (menu.classList.contains('open')) {
-        menu.classList.remove('open');
-    } else {
-        menu.classList.add('open');
-    }
+// menu.addEventListener('click', function () {
+//     // contains: 클래스 유지하고 있으면,
+//     if (menu.classList.contains('open')) {
+//         menu.classList.remove('open');
+//     } else {
+//         menu.classList.add('open');
+//     }
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.querySelector('.menu-wrap');
+
+    if (!menu) return; // 요소가 없으면 종료
+
+    menu.addEventListener('click', function () {
+        menu.classList.toggle('open');
+    });
 });
+
 
 
 

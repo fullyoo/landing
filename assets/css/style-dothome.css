@@ -61,7 +61,7 @@ section h3 span {
 
 section .sec-cta {
     font-size: 24px;
-    background-image: url(../images/sec-cta-ico.png);
+    background-image: url(/wp-content/uploads/2025/10/sec-cta-ico.png);
     padding-top: 18px;
     background-position: 17% 50%;
     transition: .3s;
@@ -417,7 +417,7 @@ a {
 
 .kv-list {
     color: var(--white-color);
-    background-image: url(../images/kv-ico-bg.png);
+    background-image: url(/wp-content/uploads/2025/10/kv-ico-bg.png);
     background-position: 20% top;
     background-size: cover;
 
@@ -491,7 +491,7 @@ a {
     border-radius: 50px;
     font-size: 30px;
     font-weight: 700;
-    background: var(--primary-color) url(../images/kv-cta-ico.png) no-repeat 15% 50%;
+    background: var(--primary-color) url(/wp-content/uploads/2025/10/kv-cta-ico.png) no-repeat 15% 50%;
     display: inline-block;
     text-align: center;
     transition: .3s;
@@ -582,19 +582,19 @@ a {
 }
 
 .control-btn .play {
-    background-image: url(../images/control-play.svg);
+    background-image: url(/wp-content/uploads/2025/10/control-play.svg);
 }
 
 .control-btn .pause {
-    background-image: url(../images/control-pause.svg);
+    background-image: url(/wp-content/uploads/2025/10/control-pause.svg);
 }
 
 .control-btn .prev {
-    background-image: url(../images/control-prev.svg);
+    background-image: url(/wp-content/uploads/2025/10/control-prev.svg);
 }
 
 .control-btn .next {
-    background-image: url(../images/control-next.svg);
+    background-image: url(/wp-content/uploads/2025/10/control-next.svg);
 }
 
 
@@ -699,17 +699,17 @@ a {
     font-size: 22px;
     font-weight: 600;
     transition: all 0.3s ease;
-    background: url(../images/phone-tab1.svg) no-repeat 15px 50%;
+    background: url(/wp-content/uploads/2025/10/phone-tab1.svg) no-repeat 15px 50%;
     padding-left: 50px;
     background-color: var(--white-color);
 }
 
 .tab-menu:nth-child(2) {
-    background-image: url(../images/phone-tab2.svg);
+    background-image: url(/wp-content/uploads/2025/10/phone-tab2.svg);
 }
 
 .tab-menu:nth-child(3) {
-    background-image: url(../images/phone-tab3.svg);
+    background-image: url(/wp-content/uploads/2025/10/phone-tab3.svg);
 }
 
 .tab-menu:hover {
@@ -963,16 +963,16 @@ a {
 }
 
 .nav-link.tab-menu {
-    background-image: url(../images/price-tab1.svg);
+    background-image: url(/wp-content/uploads/2025/10/price-tab1.svg);
     background-color: var(--white-color);
 }
 
 .nav-link:nth-child(2).tab-menu {
-    background-image: url(../images/price-tab2.svg);
+    background-image: url(/wp-content/uploads/2025/10/price-tab2.svg);
 }
 
 .nav-link:nth-child(3).tab-menu {
-    background-image: url(../images/price-tab3.svg);
+    background-image: url(/wp-content/uploads/2025/10/price-tab3.svg);
 }
 
 .nav-link:hover {
@@ -1002,7 +1002,7 @@ a {
     color: var(--text-color);
     font-weight: 600;
     font-size: 18px;
-    background: url(../images/price-item2.svg) no-repeat 15px 50%;
+    background: url(/wp-content/uploads/2025/10/price-item2.svg) no-repeat 15px 50%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1016,12 +1016,12 @@ a {
     height: 70px;
     font-weight: 700;
     color: var(--red-color);
-    background: url(../images/price-item1.svg) no-repeat 15px 50%;
+    background: url(/wp-content/uploads/2025/10/price-item1.svg) no-repeat 15px 50%;
     line-height: 1.5;
 }
 
 .price-box-item:nth-child(2) {
-    background-image: url(../images/price-item3.svg);
+    background-image: url(/wp-content/uploads/2025/10/price-item3.svg);
 }
 
 .price-add {
@@ -1527,11 +1527,11 @@ a {
 }
 
 .customer-touch .tel {
-    background: url(../images/tel-ico.svg) no-repeat 0 50%;
+    background: url(/wp-content/uploads/2025/10/tel-ico.svg) no-repeat 0 50%;
 }
 
 .customer-touch .email {
-    background: url(../images/email-ico.svg) no-repeat 0 50%;
+    background: url(/wp-content/uploads/2025/10/email-ico.svg) no-repeat 0 50%;
 }
 
 .customer-time {}
@@ -1623,7 +1623,7 @@ a {
 .form-data .sec-cta {
     font-size: 18px;
     background-position-x: 37%;
-    background-image: url(../images/customer-ico.svg);
+    background-image: url(/wp-content/uploads/2025/10/customer-ico.svg);
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
@@ -1662,7 +1662,7 @@ a {
 }
 
 .check-box input[type='checkbox']:checked+label:before {
-    background-image: url(../images/customer-check-on-w.svg);
+    background-image: url(/wp-content/uploads/2025/10/customer-check-on-w.svg);
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     /* background-position: -1px -1px; */
@@ -1686,7 +1686,7 @@ a {
     left: 0;
     width: 24px;
     height: 24px;
-    background: var(--white-color) url(../images/customer-check-off.svg) no-repeat 0 0;
+    background: var(--white-color) url(/wp-content/uploads/2025/10/customer-check-off.svg) no-repeat 0 0;
     border: 1px solid var(--gray-color2);
     border-radius: 5px;
     transform: translateY(-50%);
@@ -1930,6 +1930,7 @@ a.btn-layerClose:hover {
     background-color: rgba(0 0 0 / 80%);
     border-radius: 100px;
     /* transition: .2s; */
+    border: 0;
 }
 
 .arrow-box button:hover {
@@ -1937,13 +1938,24 @@ a.btn-layerClose:hover {
 }
 
 .stop.play {
-    background-image: url("../images/play.svg");
+    background-image: url("/wp-content/uploads/2025/10/play.svg");
 }
 
 .stop {
     width: 40px;
     height: 40px;
-    background: url("../images/stop.svg") no-repeat center / cover;
+    background: url("/wp-content/uploads/2025/10/stop.svg") no-repeat center / cover;
+}
+
+[type=button]:focus,
+[type=button]:hover,
+[type=submit]:focus,
+[type=submit]:hover,
+button:focus,
+button:hover {
+    background-color: rgba(27 70 235 / 80%);
+    color: #fff;
+    text-decoration: none;
 }
 
 .swiper-pagination {
@@ -2097,11 +2109,11 @@ a.btn-layerClose:hover {
 }
 
 .footer-customer-touch .tel {
-    background: url(../images/footer-tel-ico.svg) no-repeat 0 50%;
+    background: url(/wp-content/uploads/2025/10/footer-tel-ico.svg) no-repeat 0 50%;
 }
 
 .footer-customer-touch .email {
-    background: url(../images/footer-email-ico.svg) no-repeat 0 80%;
+    background: url(/wp-content/uploads/2025/10/footer-email-ico.svg) no-repeat 0 80%;
 }
 
 .footer-customer-time {
@@ -2594,8 +2606,8 @@ a.btn-layerClose:hover {
         right: 0px;
         width: 32px;
         height: 32px;
-        background: url(../images/mo-gnb-btn.svg) no-repeat 50% 50% / 32px;
-        background: url(../images/mo-hamburger-btn.svg) no-repeat 50% 50% / 32px;
+        background: url(/wp-content/uploads/2025/10/mo-gnb-btn.svg) no-repeat 50% 50% / 32px;
+        background: url(/wp-content/uploads/2025/10/mo-hamburger-btn.svg) no-repeat 50% 50% / 32px;
         text-indent: -9999px;
     }
 
@@ -2609,7 +2621,7 @@ a.btn-layerClose:hover {
         right: 0px;
         width: 32px;
         height: 32px;
-        background: url(../images/mo-close-btn.svg) no-repeat 50% 50% / 32px;
+        background: url(/wp-content/uploads/2025/10/mo-close-btn.svg) no-repeat 50% 50% / 32px;
         text-indent: -9999px;
     }
 
@@ -2632,7 +2644,7 @@ a.btn-layerClose:hover {
     .header-nav.on {
         display: block;
         top: 76px;
-        /* top: 0; */
+        top: 200px;
         right: 0;
         opacity: 1;
 
