@@ -279,7 +279,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 100000;
     /* padding: 22px 0px; */
     background-color: var(--white-color);
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .15);
@@ -1599,7 +1599,7 @@ a {
     border: none;
     outline: none;
     font-family: 'pretendard', sans-serif;
-    /* min-height: 50px; */
+    min-height: 50px;
 }
 
 .form-data textarea {
@@ -2644,7 +2644,7 @@ button:hover {
     .header-nav.on {
         display: block;
         top: 76px;
-        top: 200px;
+        /* top: 200px; */
         right: 0;
         opacity: 1;
 
