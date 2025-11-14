@@ -465,7 +465,8 @@ a {
 }
 
 .kv-left {
-    font-family: 'GMarketSans', sans-serif;
+    font-family: 'GMarketSans', 'Pretendard', sans-serif;
+
 }
 
 .kv-left h4 {
