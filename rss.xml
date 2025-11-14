@@ -9,10 +9,10 @@
 
     <item>
       <title>RSS 테스트 게시글</title>
-      <link>https://landing-re.netlify.app/menu03-1.html</link>
+      <link>https://landing-re.netlify.app/</link>
       <description>이 RSS는 임시 테스트용입니다.</description>
       <pubDate>Thu, 06 Nov 2025 09:00:00 +0900</pubDate>
-      <guid>https://landing-re.netlify.app/menu03-1.html</guid>
+      <guid>https://landing-re.netlify.app/</guid>
     </item>
 
   </channel>
