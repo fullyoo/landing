@@ -981,14 +981,14 @@ $('.review-slide .swiper-slide').on('mouseleave', function () {
 
 
 
-//12-2. 레이어팝업 띄우기
-$(window).on('load', function () {
-    const $popup = $('#portfolio-popup');
-    const $closeBtn = $('#popup-close');
+//12-2. 레이어팝업 띄우기(주석 풀기)
+// $(window).on('load', function () {
+//     const $popup = $('#portfolio-popup');
+//     const $closeBtn = $('#popup-close');
 
-    $popup.css('display', 'flex');
+//     $popup.css('display', 'flex');
 
-    $closeBtn.on('click', function () {
-        $popup.hide();
-    });
-});
+//     $closeBtn.on('click', function () {
+//         $popup.hide();
+//     });
+// });
