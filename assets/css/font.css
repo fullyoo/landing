@@ -7,7 +7,17 @@
 /* font-display: swap; = 웹폰트 로딩 전까지는 기본폰트로 보여주고, 다운로드되면 즉시 웹폰트로 교체*/
 
 
+
+/* ==========================
+    01. 프리텐다드
+========================== */
+
+
+/* font-display: swap; = 웹폰트 로딩 전까지는 기본폰트로 보여주고, 다운로드되면 즉시 웹폰트로 교체*/
+
 /*** Pretendard 전체 굵기 @font-face (eot / woff2 / woff / ttf) ***/
+
+
 /* Thin 100 */
 @font-face {
     font-family: 'Pretendard';
@@ -125,9 +135,14 @@
         url('../fonts/Pretendard-Black.ttf') format('truetype');
 }
 
-/** 지마켓 산스 전체 굵기 @font-face (이름: GmarketSansTTF) **/
-/* 02 */
-/* GmarketSansTTF Light 300 */
+
+
+
+/* ==========================
+    02. 지마켓 산스
+========================== */
+
+/* Light 300 */
 @font-face {
     font-family: 'GmarketSans';
     font-weight: 300;
@@ -140,7 +155,7 @@
         url('../fonts/GmarketSansTTFLight.ttf') format('truetype');
 }
 
-/* GmarketSansTTF Medium 500 */
+/* Medium 500 */
 @font-face {
     font-family: 'GmarketSans';
     font-weight: 500;
@@ -153,7 +168,7 @@
         url('../fonts/GmarketSansTTFMedium.ttf') format('truetype');
 }
 
-/* GmarketSansTTF Bold 700 */
+/* Bold 700 */
 @font-face {
     font-family: 'GmarketSans';
     font-weight: 700;
