@@ -5,115 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- iOS 전화번호, 이메일, 주소 자동링크 방지 -->
-    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <!-- iOS 전화번호 자동링크 방지 -->
+    <meta name="format-detection" content="telephone=no">
 
     <!-- 기본 메타 정보 -->
-    <title>세티즌 | 중고폰 판매</title>
+    <title>세티즌 | 중고폰 판매 – 유심/번호이동/신규개통 빠르게!</title>
+    <!-- <title>세티즌 | 통신비 아끼는 갓성비 가입혜택 – 유심/번호이동/신규개통 빠르게!</title> -->
+    <meta name="description"
+        content="중고폰을 합리적인 가격으로!! 매달 통신비를 획기적으로 줄이고 싶다면? 유심 구매, 번호이동, 신규개통까지 5분 내 가능! 갓성비 요금제, 최신 스마트폰 반값 혜택, 데이터 추가 제공까지 – 지금 신청하세요.">
+    <meta name="keywords" content="중고폰 판매, 통신비 절감, 유심, 번호이동, 신규개통, 갓성비 요금제, 스마트폰 할인, 데이터 혜택, 알뜰폰, 개통 이벤트">
+
+    <!-- 검색엔진 크롤링 설정 -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://landing-re.netlify.app/">
+
+    <!-- Open Graph (Facebook, Kakao, Instagram 등) -->
+    <meta property="og:url" content="https://landing-re.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="세티즌 – 중고폰 판매, 통신비 절감 랜딩페이지">
+    <meta property="og:title" content="중고폰 판매, 통신비 아끼는 갓성비 가입혜택 – 지금 신청하기">
+    <meta property="og:description" content="중고폰 판매, 유심/번호이동/신규개통 5분 완성! 반값 스마트폰, 데이터 추가 혜택까지 한눈에.">
+    <meta property="og:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="중고폰 판매, 통신비 절감 및 유심 빠른 개통 혜택 안내 이미지">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="중고폰 판매, 통신비 아끼는 갓성비 가입혜택">
+    <meta name="twitter:description" content="중고폰 판매, 유심, 번호이동, 신규개통 – 통신비 걱정 끝! 반값 스마트폰과 데이터 추가 혜택까지 한 번에.">
+    <meta name="twitter:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
 
     <!-- 파비콘 (브라우저 / iOS) -->
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/images/favicon.ico">
 
-    <!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="alternate" type="application/rss+xml" title="Damrok Chair RSS" href="/rss.xml"> -->
+    <!-- 소셜미디어 프로필 연결 -->
+    <link rel="me" href="https://www.instagram.com/fully.yoo">
+
+    <!-- 구조화 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "세티즌 – 중고폰 판매, 통신비 절감 랜딩페이지",
+      "url": "https://landing-re.netlify.app/",
+      "logo": "https://landing-re.netlify.app/assets/images/logo.svg",
+      "sameAs": [
+        "https://www.instagram.com/fully.yoo"
+      ],
+      "description": "중고폰 판매, 유심구매, 번호이동, 신규개통을 빠르게! 통신비 절감, 반값 스마트폰, 데이터 추가 혜택까지 한 번에."
+    }
+    </script>
+
+    <!-- Google Search Console 인증 -->
+    <meta name="google-site-verification" content="vnqBy3aQtFRNgqglh3m3ATc2MnZ5PjiFwBi-0th2VOs">
+
+
+    <!-- Google Analytics 4 최신 코드 (기존 UA보다 권장됨) -->
+    <!-- window.GA_ID 값이 있을 경우 자동으로 삽입,없을 경우 기본 ID(G-7ABCD1234E) 사용 -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ABCD1234E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7ABCD1234E'); // UA → GA4 ID로 변경 권장
+    </script>
+
+
+    <!-- Naver Analytics -->
+    <script src="//wcs.naver.net/wcslog.js"></script>
+    <script>
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "671e216cccdff8"; // 네이버 애널리틱스 ID
+        if (window.wcs) {
+            wcs_do();
+        }
+    </script>
 
     <!-- AOS / Swiper / CSS -->
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
-    <!-- SEO 최적화 -->
-    <!-- ================== 기본 메타 태그 (SEO) ================== -->
-    <meta name="title" content="세티즌 | 중고폰 합리적 구매 · 유심 · 번호이동 · 신규개통">
-    <meta name="description" content="세티즌에서 검증된 중고폰을 합리적인 가격으로 구매하세요. 유심 구매, 번호이동, 신규개통까지 한 번에 가능한 중고폰 전문 쇼핑몰입니다.">
-    <meta name="keywords" content="세티즌, 중고폰, 중고 스마트폰, 중고폰 구매, 유심 구매, 번호이동, 신규개통, 자급제폰">
-    <meta name="author" content="세티즌">
-    <meta name="robots" content="index, follow">
-
-    <!-- ================== Open Graph 메타 태그 (SNS 공유: Facebook, Kakao 등) ================== -->
-    <meta property="og:title" content="세티즌 | 중고폰 합리적 구매 · 유심 · 번호이동 · 신규개통">
-    <meta property="og:description" content="합리적인 가격의 중고폰, 세티즌에서 만나보세요. 유심 구매부터 번호이동, 신규개통까지 간편하게 이용할 수 있습니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://landing-re.netlify.app">
-    <meta property="og:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="세티즌 중고폰 합리적 구매 서비스">
-    <meta property="og:site_name" content="세티즌">
-    <meta property="og:locale" content="ko_KR">
-
-    <!-- ================== Twitter 카드 메타 태그 ================== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="세티즌 | 중고폰 합리적 구매">
-    <meta name="twitter:description" content="중고폰을 더 합리적으로. 세티즌에서 중고폰 구매부터 유심, 번호이동, 신규개통까지 한 번에 해결하세요.">
-    <meta name="twitter:image" content="https://landing-re.netlify.app/assets/images/og-image.jpg">
-    <meta name="twitter:image:alt" content="세티즌 중고폰 서비스">
-    <meta name="twitter:site" content="@cetizen">
-    <meta name="twitter:creator" content="@cetizen">
-
-    <!-- ================== SEO 및 사용자 경험 보완 태그 ================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="language" content="ko">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="https://landing-re.netlify.app">
-
-    <!-- ================== 웹앱 및 브라우저 최적화 ================== -->
-    <meta name="theme-color" content="#1B46EB">
-    <meta name="application-name" content="세티즌">
-    <meta name="msapplication-TileColor" content="#1B46EB>
-    <meta name=" apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="세티즌">
-
-    <!-- ================== 아이콘 및 리소스 링크 ================== -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- 각 사이트 등록 -->
-    <!-- google -->
-    <meta name="google-site-verification" content="vnqBy3aQtFRNgqglh3m3ATc2MnZ5PjiFwBi-0th2VOs" />
-    <!-- naver -->
-    <meta name="naver-site-verification" content="c94bb3e248ca77de87b5965f5e2763cdfb45634d" />
-
-
-    <!-- google 애널리틱스1 -->
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M55WW4X8');</script>
-    <!-- End Google Tag Manager -->
-
-
 </head>
 
+
+
 <body id="main">
-
-    <!-- naver 애널리틱스-->
-    <script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
-    <script type="text/javascript">
-        if (!wcs_add) var wcs_add = {};
-        wcs_add["wa"] = "175922819b5a920";
-        if (window.wcs) {
-            wcs_do();
-        }
-    </script>
-
-    <!-- google 애널리틱스2 -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M55WW4X8" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
     <!-- 상단 메인 띠배너 -->
     <div class="top-banner">
         <div class="inner-sec banner-inner">
