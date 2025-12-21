@@ -1614,6 +1614,7 @@ a {
     outline: none;
     resize: none;
     overflow-y: auto;
+    font-family: 'Pretendard', 'GmarketSans', sans-serif;
 }
 
 .form-data input::placeholder {}

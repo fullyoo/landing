@@ -1239,17 +1239,25 @@
 
     <script>
 
+        //12-1. 얼럿창
+
+        $(window).on('load', function () {
+            alert('본 페이지는 포트폴리오 용도로 제작된 사이트입니다.');
+        });
+
+
         //12-2. 레이어팝업 띄우기
-        // $(window).on('load', function () {
-        //     const $popup = $('#portfolio-popup');
-        //     const $closeBtn = $('#popup-close');
 
-        //     $popup.css('display', 'flex');
+        $(window).on('load', function () {
+            const $popup = $('#portfolio-popup');
+            const $closeBtn = $('#popup-close');
 
-        //     $closeBtn.on('click', function () {
-        //         $popup.hide();
-        //     });
-        // });
+            $popup.css('display', 'flex');
+
+            $closeBtn.on('click', function () {
+                $popup.hide();
+            });
+        });
 
     </script>
 
