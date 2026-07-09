@@ -1201,7 +1201,7 @@
 
 
     <!-- 📍 포트폴리오 용도 팝업 -->
-    <div id="portfolio-popup">
+    <div id="portfolio-popup" style="display: none;">
         <div class="popup-content">
             <p>이 페이지는 포트폴리오용 홈페이지입니다.</p>
             <button id="popup-close">확인</button>
@@ -1249,7 +1249,7 @@
         //12-2. 레이어팝업 띄우기
 
         $(window).on('load', function () {
-            const $popup = $('#portfolio-popup');
+            //const $popup = $('#portfolio-popup');
             const $closeBtn = $('#popup-close');
 
             $popup.css('display', 'flex');
